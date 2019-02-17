@@ -1,0 +1,20 @@
+{
+	"name": "cryptocurrency-calculator",
+	"version": "1.0.0",
+	"description": "This app is using coinmarket API to show current exchange rate and changes in last time of four chosen cryptocurrencies and allows to check exchange rate for rest ofcryptocurrencies compare to U.S. Dollar, British Pound and Euro",
+	"main": "index.js",
+	"scripts": {
+		"build": "webpack --mode development",
+		"watch": "webpack --watch"
+	},
+	"author": "Patryk Białek",
+	"license": "ISC",
+	"devDependencies": {
+		"css-loader": "^2.1.0",
+		"node-sass": "^4.11.0",
+		"sass-loader": "^7.1.0",
+		"style-loader": "^0.23.1",
+		"webpack": "^4.29.0",
+		"webpack-cli": "^3.2.1"
+	}
+}

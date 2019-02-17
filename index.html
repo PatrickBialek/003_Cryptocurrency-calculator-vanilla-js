@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cryptocurrency rates calculator</title>
+    <link rel="icon" href="images/icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yantramanav" rel="stylesheet">
+    <script defer src="dist/bundle.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1 class="heading-primary">Cryptocurrency rates calculator</h1>
+        <img class="heading-underline" src="images/heading-underline.png" alt="">
+        <p class="header__description">Morbi at augue pretium, facilisis sem vitae, ornare nunc. Suspendisse lacinia, augue nec aliquam maximus, urna dui luctus sem, et condimentum augue orci eget nulla.</p>
+        <p class="header__description">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.</p>
+    </header>
+
+    <main class="main">
+            <div class="most-popular">
+                <h2 class="heading-secondary margin-bottom--small">The most popular cryptocurrencies:</h2>
+                <div class="most-popular__content">
+                    <div class="most-popular__single-currency" data-currency="BTC">
+                        <img class="most-popular__currency-logo" src="svg/BTC.svg" alt="Bitcoin logo">
+                        <h3 class="most-popular__currency-name">Bitcoin</h3>
+                    </div>
+                    <div class="most-popular__single-currency" data-currency="XRP">
+                        <img class="most-popular__currency-logo" src="svg/XRP.svg" alt="Ripple logo">
+                        <h3 class="most-popular__currency-name">Ripple</h3>
+                    </div>
+                    <div class="most-popular__single-currency" data-currency="ETH">
+                        <img class="most-popular__currency-logo" src="svg/ETH.svg" alt="Ethereum logo">
+                        <h3 class="most-popular__currency-name">Ethereum</h3>
+                    </div>
+                    <div class="most-popular__single-currency" data-currency="LTC">
+                        <img class="most-popular__currency-logo" src="svg/LTC.svg" alt="Litecoin logo">
+                        <h3 class="most-popular__currency-name">Litecoin</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="choose-currency">
+                <h2 class="heading-secondary">Choose currencies:</h2>
+                <img class="heading-underline" src="images/heading-underline.png" alt="">
+                <span class="choose-currency__description margin-bottom--small">Standard currency:</span>
+                <select class="choose-currency__select" id="standard-currency">
+                    <option value="" disabled selected>Select...</option>
+                    <option value="USD" data-symbol="$">USD</option>
+                    <option value="GBP" data-symbol="£">GBP</option>
+                    <option value="EUR" data-symbol="€">Euro</option>
+                </select>
+                <span class="choose-currency__description margin-top--medium margin-bottom--small">Cryptocurrency:</span>
+                <select class="choose-currency__select" id="cryptocurrency">
+                    <option value="" disabled selected>Select...</option>
+                </select>
+                <input class="btn margin-top--medium" type="button" id="check-price" value="Confirm">
+            </div>
+        <div class="error" id="error-select"></div>
+        <div class="result" id="result-field">
+            <h2 class="heading-secondary margin-bottom--small">Result:</h2>
+            <p class="result__paragraph">Here will be placed the result...</span></p>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__paragraph">© All Rights Reserved.</p>
+        <p class="footer__paragraph">Patryk Białek</p>
+    </footer>
+</body>
+</html>

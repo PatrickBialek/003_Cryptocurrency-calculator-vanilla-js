@@ -1,0 +1,36 @@
+html {
+	font-size: 62.5%;
+}
+body {
+	line-height: 1;
+	font-size: 1.6rem;
+	font-family: "Poppins", sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.header,
+.main,
+.footer,
+.most-popular,
+.most-popular__single-currency {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+	text-align: center;
+}
+.main,
+.choose-currency {
+	width: 100%;
+}
+.main {
+	padding: 5rem 2rem;
+	background-color: $light-grey;
+}
+.error {
+	color: $red;
+	padding: 1rem;
+	margin-top: 1rem;
+	height: 1.6rem;
+}

@@ -1,0 +1,10 @@
+.result {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 15rem;
+	&__important {
+		color: $black;
+		font-weight: 700;
+	}
+}
